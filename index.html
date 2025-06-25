@@ -1,1 +1,158 @@
-<h1>hello world </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPKG - Premium Plastic Packaging</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Apple-like animations and typography */
+        @font-face {
+            font-family: 'SF Pro';
+            src: url('https://fonts.cdnfonts.com/css/sf-pro-display');
+        }
+        body {
+            font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">EPKG</div>
+            <ul class="flex space-x-8 text-sm font-medium">
+                <li><a href="#about" class="hover:text-blue-600 transition-colors">About</a></li>
+                <li><a href="#products" class="hover:text-blue-600 transition-colors">Products</a></li>
+                <li><a href="#services" class="hover:text-blue-600 transition-colors">Services</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section pt-32 pb-20 bg-gradient-to-b from-gray-50 to-white text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 fade-in">Packaging, Perfected.</h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 fade-in">EPKG delivers premium plastic packaging solutions for cosmetics, pharmaceuticals, and more.</p>
+            <a href="#contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors fade-in">Connect with Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 fade-in">Who We Are</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 space-y-6">
+                <p class="fade-in">EPKG, based in Shaoxing City’s Shangyu District, is a leading blow molding manufacturer, strategically located 120 km from Ningbo Port and 220 km from Shanghai Port. Since 2012, we’ve crafted high-quality plastic packaging with precision and care.</p>
+                <p class="fade-in">Our advanced facilities and expert team specialize in R&D, mold design, injection and blow molding, silk-screen printing, hot stamping, and more. Certified under ISO 9001, we ensure every product meets the highest standards.</p>
+                <p class="fade-in">Driven by integrity, efficiency, and innovation, EPKG partners with global brands to create packaging that elevates their products. Join us in shaping the future of packaging.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale fade-in">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">PET Plastic Bottles</h3>
+                        <p class="text-gray-600">Precision-crafted injection-stretch-blow PET bottles, perfect for cosmetics and pharmaceuticals.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale fade-in">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">PP/HDPE Bottles</h3>
+                        <p class="text-gray-600">Robust and versatile blow-molded bottles for diverse industrial applications.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover-scale fade-in">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Thick-Wall PETG Bottles</h3>
+                        <p class="text-gray-600">Luxurious glass-like PETG bottles for premium cosmetic and personal care products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 fade-in">What We Offer</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Innovative R&D and custom mold design</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Advanced injection and blow molding</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Silk-screen printing and hot stamping</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Spray coating and electroplating</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Automated assembly</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700">Rigorous ISO 9001 quality control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 fade-in">Let’s Build Your Brand</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto fade-in">EPKG is here to help you create packaging that stands out. Contact us to start your journey with us.</p>
+            <div class="text-lg text-gray-700 space-y-4 fade-in">
+                <p><strong>Email:</strong> <a href="mailto:info@epkg.com" class="text-blue-600 hover:underline">info@epkg.com</a></p>
+                <p><strong>Phone:</strong> +86-123-456-7890</p>
+                <p><strong>Address:</strong> Shangyu District, Shaoxing City, Zhejiang, China</p>
+            </div>
+            <a href="mailto:info@epkg.com" class="inline-block mt-8 bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors fade-in">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="textევ
+System: text-sm">© 2025 EPKG. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Fade-In Animations -->
+    <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        fadeInElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
